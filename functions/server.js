@@ -6,4 +6,8 @@ app.get('/', (req, res) => {
    res.json({status: "ok"});
 });
 
+const bookingRouter = require('./routes/bookings')
+
+app.use('/booking', bookingRouter)
+
 module.exports = app;

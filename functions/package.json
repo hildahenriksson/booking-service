@@ -4,6 +4,7 @@
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
+    "dev": "nodemon service.js",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
@@ -19,7 +20,8 @@
     "firebase-functions": "^4.3.1"
   },
   "devDependencies": {
-    "firebase-functions-test": "^3.1.0"
+    "firebase-functions-test": "^3.1.0",
+    "nodemon": "^3.0.1"
   },
   "private": true
 }
