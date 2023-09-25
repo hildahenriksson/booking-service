@@ -7,7 +7,13 @@
     "dev": "nodemon service.js",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "test": "jest  --group=-component --group=-integration",
+    "test:watch": "jest --watchAll=true --passWithNoTests --group=-component --group=-integration",
+    "test:component": "jest --group=component",
+    "test:integration": "jest --group=integration",
+    "component_test": "jest --group=component",
+    "integration_test": "jest --group=integration"
   },
   "engines": {
     "node": "18"
@@ -18,11 +24,17 @@
     "express": "^4.18.2",
     "firebase-admin": "^11.8.0",
     "firebase-functions": "^4.3.1",
+    "jest-runner-groups": "^2.2.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
     "firebase-functions-test": "^3.1.0",
     "nodemon": "^3.0.1"
   },
-  "private": true
+  "private": true,
+  "jest": {
+    "runner": "groups"
+  }
 }
