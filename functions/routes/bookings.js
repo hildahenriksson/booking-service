@@ -19,7 +19,6 @@ router.post('/', (req, res) => {
 
     bookedTimes.push(newBooking);
     console.log(bookedTimes);
-    console.log(body)
     res.redirect('/')
 });
 
