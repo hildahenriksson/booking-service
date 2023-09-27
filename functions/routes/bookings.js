@@ -22,4 +22,18 @@ router.post('/', (req, res) => {
     res.redirect('/')
 });
 
+router.delete('/:id', (req, res) => {
+    const id = req.params.id;
+    const bookingToDelete = bookedTimes.find(item => item.id === id);
+    const index = bookedTimes.indexOf(bookingToDelete)
+
+    if (index !== -1) {
+        bookedTimes.splice(index, 1);
+        console.log('Deleted booking: ' + id)
+        res.send(`Booking with id "${id}" was deleted.`);
+    } else {
+        res.status(404).send(`Booking with id "${id}" was not found.`);
+    }
+})
+
 module.exports = router;
