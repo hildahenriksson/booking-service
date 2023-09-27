@@ -7,7 +7,9 @@ app.get('/', (req, res) => {
 });
 
 const bookingRouter = require('./routes/bookings')
+const serviceRouter = require('./routes/services')
 
 app.use('/booking', bookingRouter)
+app.use('/services', serviceRouter)
 
 module.exports = app;
