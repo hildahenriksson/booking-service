@@ -3,8 +3,8 @@
  */
 
 const request = require('supertest')
-const app = require('../server')
-const bookedTimes = require('../resources/booked-times.json')
+const app = require('../../server')
+const bookedTimes = require('../../resources/booked-times.json')
 
 describe('When testing /booking', () => {
   describe('Post', () => {
@@ -29,6 +29,19 @@ describe('When testing /booking', () => {
     });
   });
 });
+
+describe('When testing /booking', () => {
+  describe('DELETE', () => {
+    it('should delete booking', async () => {
+      const id = '1'; 
+      const res = await request(app)
+        .delete(`/booking/${id}`);
+      expect(res.statusCode).toEqual(200);
+    });
+  });
+});
+
+
 
 
 //Fails because we dont have routes to specific ID

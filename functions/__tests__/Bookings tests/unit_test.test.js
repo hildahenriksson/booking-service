@@ -2,7 +2,7 @@
  * @group unit
  */
 
-const bookingHandler = require('../routes/bookings.js')
+const bookingHandler = require('../../routes/bookings.js')
 
 describe('When testing bookingHandler', () => {
   describe('post', () => {
