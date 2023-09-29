@@ -15,6 +15,8 @@ router.post('/', (req, res) => {
         id: uuid.v4(),
         name: req.body.name,
         date: req.body.date,
+        startTime: req.body.time,
+        duration: req.body.duration,
         service: req.body.service
     }
 
