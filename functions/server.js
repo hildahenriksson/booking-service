@@ -13,8 +13,10 @@ app.get('/', (req, res) => {
 
 const bookingRouter = require('./routes/bookings')
 const serviceRouter = require('./routes/services')
+const reviewRouter = require('./routes/reviews')
 
 app.use('/booking', bookingRouter)
 app.use('/services', serviceRouter)
+app.use('/review', reviewRouter)
 
 module.exports = app;
