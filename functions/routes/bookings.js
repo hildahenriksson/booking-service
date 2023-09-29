@@ -1,4 +1,5 @@
 const express = require('express');
+const supertest = require('supertest');
 const router = express.Router();
 const uuid = require('uuid')
 const bookedTimes = require('../resources/booked-times.json')
@@ -8,7 +9,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    console.log('post');
+    // console.log('post');
 
     const newBooking = {
         id: uuid.v4(),
