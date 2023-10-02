@@ -9,7 +9,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    // console.log('post');
 
     const newBooking = {
         id: uuid.v4(),
