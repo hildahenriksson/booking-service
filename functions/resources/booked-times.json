@@ -22,5 +22,13 @@
         "startTime": 13,
         "duration": 3,
         "service": "Vardagsstädning"
+    },
+    {
+        "id": "4",
+        "name": "Jasmine Doe",
+        "date": "2023-10-29",
+        "startTime": 14,
+        "duration": 3,
+        "service": "Vardagsstädning"
     }
 ]
