@@ -22,4 +22,16 @@ router.post('/', (req, res) => {
     res.redirect('/')
 });
 
+router.delete('/:id', (req, res) => {
+    const id = req.params.id;
+    const reviewIndex = customerReviews.findIndex(review => review.id === id);
+
+    if (reviewIndex !== -1) {
+        customerReviews.splice(reviewIndex, 1);
+        res.status(200).json({ message: 'Review deleted' });
+    } else {
+        res.status(404).json({ message: 'Review not found' });
+    }
+});
+
 module.exports = router;
