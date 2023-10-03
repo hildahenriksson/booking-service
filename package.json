@@ -13,6 +13,7 @@
     "test:unit": "jest --group=unit",
     "test:component": "jest --group=component",
     "test:integration": "jest --group=integration",
+    "unit_test": "jest --group=unit",
     "component_test": "jest --group=component",
     "integration_test": "jest --group=integration"
   },
