@@ -2,7 +2,6 @@
  * @group unit
  */
 
-<<<<<<< HEAD
 const request = require('supertest')
 const serviceHandler = require('../../resources/services.json')
 
@@ -33,22 +32,3 @@ describe('When testing jest', () => {
     
 //   })
 // })
-=======
-const express = require('express');
-const supertest = require('supertest');
-const assert = require('assert');
-const router = require('../../routes/services'); 
-
-const app = express();
-app.use(express.json());
-app.use('/', router);
-
-describe('When fetching services', () => {
-    describe('get', () => {
-        it('should respond with array', async () => {
-            const response = await supertest(app).get('/');
-            assert(Array.isArray(response.body));
-        });
-    });
-});
->>>>>>> 7c0ec813a7773a1aa345d8c4c2e26890229fc871
