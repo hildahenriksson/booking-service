@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const uuid = require('uuid')
+// const uuid = require('uuid')
+const crypto = require('crypto');
 const services = require('../resources/services.json')
 
 router.get('/', (req, res) => {
@@ -10,7 +11,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
 
     const newService = {
-        id: uuid.v4(),
+        id: crypto.randomUUID(),
         title: req.body.title,
         description: req.body.description,
         price: req.body.price,
