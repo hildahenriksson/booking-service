@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const uuid = require('uuid')
+// const uuid = require('uuid')
+const crypto = require('crypto');
 const bookedTimes = require('../resources/booked-times.json')
 
 router.get('/', (req, res) => {
@@ -10,7 +11,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
 
     const newBooking = {
-        id: uuid.v4(),
+        id: crypto.randomUUID(),
         name: req.body.name,
         date: req.body.date,
         startTime: req.body.startTime,
