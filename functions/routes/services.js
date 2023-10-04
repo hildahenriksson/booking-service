@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
     }
 
     services.push(newService);
-    console.log(services);
+    // console.log(services);
     res.redirect('/')
 });
 

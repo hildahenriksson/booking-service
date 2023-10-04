@@ -83,7 +83,6 @@ describe('PUT /service/id', () => {
     const price = getResponse.body[2].price; 
     const imgURL = getResponse.body[2].imgURL; 
 
-    console.log('the title: ' + imgURL);
     expect(title).toBe("Dust Testing")
     expect(description).toBe("Some description")
     expect(price).toBe("5")

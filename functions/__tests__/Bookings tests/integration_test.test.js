@@ -38,7 +38,7 @@ describe('GET /booking', () => {
 
 describe('DELETE /booking/:id', () => {
   it('should delete a booking and return a 200 status code', async () => {
-    const idToDelete = '1';
+    const idToDelete = '4';
 
     const response = await request(app)
       .delete(`/booking/${idToDelete}`);
@@ -56,3 +56,37 @@ describe('DELETE /booking/:id', () => {
     expect(response.statusCode).toBe(404);
   });
 });
+
+describe('PUT /booking/id', () => {
+  it('should update a booking and return a 200 status code', async () => {
+    const update = {
+      name: "Testarsson",
+      date: "2024-04-19",
+      startTime: "10",
+      duration: "5",
+      service: "Vårstädning"
+    }
+    const idToUpdate = "3";
+
+    const putResponse = await request(app)
+      .put(`/booking/${idToUpdate}`)
+      .send(update);
+
+    expect(putResponse.statusCode).toBe(200);
+
+    const getResponse = await request(app).get('/booking');
+
+    const name = getResponse.body[2].name; 
+    const date = getResponse.body[2].date; 
+    const startTime = getResponse.body[2].startTime; 
+    const duration = getResponse.body[2].duration; 
+    const service = getResponse.body[2].service; 
+
+    console.log('the title: ' + JSON.stringify(getResponse.body));
+    expect(name).toBe("Testarsson")
+    expect(date).toBe("2024-04-19")
+    expect(startTime).toBe("10")
+    expect(duration).toBe("5")
+    expect(service).toBe("Vårstädning")
+  })
+})
