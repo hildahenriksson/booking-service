@@ -10,6 +10,7 @@
     "logs": "firebase functions:log",
     "test": "jest  --group=-component --group=-integration",
     "test:watch": "jest --watchAll=true --passWithNoTests --group=-component --group=-integration",
+    "test:unit": "jest --group=unit",
     "test:component": "jest --group=component",
     "test:integration": "jest --group=integration",
     "component_test": "jest --group=component",

@@ -4,23 +4,97 @@
         "name": "John Doe",
         "date": "2023-10-29",
         "startTime": 9,
-        "duration": 5,
         "service": "Flyttstäd"
     }, 
     {
         "id": "2",
-        "name": "Jane Doe",
-        "date": "2023-10-30",
-        "startTime": 9,
-        "duration": 2,
-        "service": "Fönsterputs"
+        "name": "John Doe",
+        "date": "2023-10-29",
+        "startTime": 10,
+        "service": "Flyttstäd"
     },
     {
         "id": "3",
+        "name": "John Doe",
+        "date": "2023-10-29",
+        "startTime": 11,
+        "service": "Flyttstäd"
+    }, 
+    {
+        "id": "4",
+        "name": "John Doe",
+        "date": "2023-10-29",
+        "startTime": 12,
+        "service": "Flyttstäd"
+    },  
+    {
+        "id": "5",
+        "name": "Jane Doe",
+        "date": "2023-10-30",
+        "startTime": 9,
+        "service": "Fönsterputs"
+    },
+    {
+        "id": "6",
+        "name": "Jane Doe",
+        "date": "2023-10-30",
+        "startTime": 10,
+        "service": "Fönsterputs"
+    },
+    {
+        "id": "7",
         "name": "Jamal Doe",
         "date": "2023-10-23",
         "startTime": 13,
-        "duration": 3,
+        "service": "Vardagsstädning"
+    },
+    {
+        "id": "8",
+        "name": "Jamal Doe",
+        "date": "2023-10-23",
+        "startTime": 14,
+        "service": "Vardagsstädning"
+    },
+    {
+        "id": "9",
+        "name": "Jamal Doe",
+        "date": "2023-10-23",
+        "startTime": 15,
+        "service": "Vardagsstädning"
+    },
+    {
+        "id": "10",
+        "name": "Jasmine Doe",
+        "date": "2023-10-29",
+        "startTime": 13,
+        "service": "Vardagsstädning"
+    },
+    {
+        "id": "11",
+        "name": "Jasmine Doe",
+        "date": "2023-10-29",
+        "startTime": 14,
+        "service": "Vardagsstädning"
+    },
+    {
+        "id": "12",
+        "name": "Jasmine Doe",
+        "date": "2023-10-29",
+        "startTime": 15,
+        "service": "Vardagsstädning"
+    },
+    {
+        "id": "13",
+        "name": "Jasmine Doe",
+        "date": "2023-10-29",
+        "startTime": 16,
+        "service": "Vardagsstädning"
+    },
+    {
+        "id": "14",
+        "name": "Jasmine Doe",
+        "date": "2023-10-29",
+        "startTime": 17,
         "service": "Vardagsstädning"
     }
 ]

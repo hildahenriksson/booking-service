@@ -1,12 +1,29 @@
 {
   "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
     "jest": "^29.7.0",
     "jest-runner-groups": "^2.2.0",
     "supertest": "^6.3.3",
     "uuid-validate": "^0.0.3"
   },
   "scripts": {
-    "test": "jest  --group=-component --group=-integration"
+    "test": "jest  --group=-component --group=-integration",
+    "prepare": "husky install",
+    "test:watch": "jest --watchAll=true --passWithNoTests --group=-component --group=-integration",
+    "test:unit": "jest --group=unit",
+    "test:component": "jest --group=component",
+    "test:integration": "jest --group=integration",
+    "unit_test": "jest --group=unit",
+    "component_test": "jest --group=component",
+    "integration_test": "jest --group=integration",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix ."
   },
   "dependencies": {
     "cors": "^2.8.5",

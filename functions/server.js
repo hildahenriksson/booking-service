@@ -1,22 +1,22 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-const cors = require('cors')
+const cors = require('cors');
 app.use(
-   cors({
-      origin: "*"
-   })
-)
+  cors({
+    origin: "*"
+  })
+);
 app.get('/', (req, res) => {
-   res.json({status: "ok"});
+  res.json({ status: "ok" });
 });
 
-const bookingRouter = require('./routes/bookings')
-const serviceRouter = require('./routes/services')
-const reviewRouter = require('./routes/reviews')
+const bookingRouter = require('./routes/bookings');
+const serviceRouter = require('./routes/services');
+const reviewRouter = require('./routes/reviews');
 
-app.use('/booking', bookingRouter)
-app.use('/services', serviceRouter)
-app.use('/review', reviewRouter)
+app.use('/booking', bookingRouter);
+app.use('/services', serviceRouter);
+app.use('/review', reviewRouter);
 
 module.exports = app;
