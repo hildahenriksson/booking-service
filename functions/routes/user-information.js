@@ -33,12 +33,6 @@ router.post('/register', (req, res) => {
     password: req.body.password,
     admin: false
   };
-  const newUser = {
-    id: uuid.v4(),
-    username: req.body.username,
-    password: req.body.password,
-    admin: false
-  };
 
   userinformation.push(newUser);
   console.log(userinformation);
@@ -49,8 +43,6 @@ router.post('/register', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  const id = req.params.id;
-  const userIndex = userinformation.findIndex(user => user.id === id);
   const id = req.params.id;
   const userIndex = userinformation.findIndex(user => user.id === id);
 
@@ -68,4 +60,3 @@ router.delete('/:id', (req, res) => {
   }
 });
 module.exports = router;
-
