@@ -17,6 +17,7 @@
     "rules": {
         "semi": [2, "always"],
         "quotes": "off",
-        "no-undef": "off"
+        "no-undef": "off",
+        "object-shorthand": 0
     }
 }
