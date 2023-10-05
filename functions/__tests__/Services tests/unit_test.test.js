@@ -16,7 +16,7 @@ app.use('/', router);
 describe('When testing jest', () => {
   describe('given i have a non failing test', () => {
     it('should be one', () => {
-      expect(1).toBe(1);
+      expect(1).toBe(2);
     });
   });
 });
@@ -29,6 +29,8 @@ describe('When fetching services', () => {
     });
   });
 });
+
+// tests!!
 
 // describe('When testing serviceHandler', () => {
 //   describe('post', () => {

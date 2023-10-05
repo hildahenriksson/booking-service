@@ -33,13 +33,24 @@ router.post('/register', (req, res) => {
     password: req.body.password,
     admin: false
   };
+  const newUser = {
+    id: uuid.v4(),
+    username: req.body.username,
+    password: req.body.password,
+    admin: false
+  };
 
+  userinformation.push(newUser);
+  console.log(userinformation);
+  res.redirect('/');
   userinformation.push(newUser);
   console.log(userinformation);
   res.redirect('/');
 });
 
 router.delete('/:id', (req, res) => {
+  const id = req.params.id;
+  const userIndex = userinformation.findIndex(user => user.id === id);
   const id = req.params.id;
   const userIndex = userinformation.findIndex(user => user.id === id);
 
@@ -49,5 +60,12 @@ router.delete('/:id', (req, res) => {
   } else {
     res.status(404).json({ message: 'User not found' });
   }
+  if (userIndex !== -1) {
+    userinformation.splice(userIndex, 1);
+    res.status(200).json({ message: 'User deleted' });
+  } else {
+    res.status(404).json({ message: 'User not found' });
+  }
 });
 module.exports = router;
+
