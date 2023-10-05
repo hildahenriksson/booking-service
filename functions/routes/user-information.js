@@ -2,17 +2,24 @@ const express = require('express');
 const router = express.Router();
 const uuid = require('uuid')
 const userinformation = require('../resources/user-information.json')
+require('dotenv').config();
 
 const jwt = require('jsonwebtoken')
 
+router.get('/', (req, res) => {
+    res.send(userinformation);
+  });
+
 router.post('/login', (req, res) => {
     const user = userinformation.find(u => u.username === req.body.username && u.password === req.body.password);
-    
+    console.log("Request Body:", req.body);
     if (user) {
         const accessToken = jwt.sign({ id: user.id }, process.env.ACCESS_TOKEN_SECRET, {
             expiresIn: '1h' 
         });
-        res.json({ accessToken: accessToken });
+        res.json({ 
+            accessToken: accessToken, 
+            admin: user.admin});
     } else {
         res.status(401).json({ message: 'Authentication failed' });
     }
