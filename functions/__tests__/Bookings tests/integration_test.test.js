@@ -5,7 +5,7 @@
 const express = require('express');
 const request = require('supertest');
 const router = require('../../routes/bookings');
-const bookedTimes = require('../../resources/booked-times.json')
+const bookedTimes = require('../../resources/booked-times.json');
 const app = express();
 app.use(express.json());
 app.use('/booking', router);
@@ -13,13 +13,14 @@ app.use('/booking', router);
 describe('When testing /booking', () => {
   describe('Post', () => {
     it('should add new booking and redirect', async () => {
-      const countBefore = bookedTimes.length
+      const countBefore = bookedTimes.length;
       const res = await request(app)
         .post('/booking')
-        .send({ 
-          name: "name", 
-          date: "date", 
-          service: "service" });
+        .send({
+          name: "name",
+          date: "date",
+          service: "service"
+        });
       expect(bookedTimes.length).toBe(countBefore + 1);
       expect(res.statusCode).toEqual(302);
     });
@@ -65,7 +66,7 @@ describe('PUT /booking/id', () => {
       startTime: "10",
       duration: "5",
       service: "Vårstädning"
-    }
+    };
     const idToUpdate = "3";
 
     const putResponse = await request(app)
@@ -76,17 +77,17 @@ describe('PUT /booking/id', () => {
 
     const getResponse = await request(app).get('/booking');
 
-    const name = getResponse.body[2].name; 
-    const date = getResponse.body[2].date; 
-    const startTime = getResponse.body[2].startTime; 
-    const duration = getResponse.body[2].duration; 
-    const service = getResponse.body[2].service; 
+    const name = getResponse.body[2].name;
+    const date = getResponse.body[2].date;
+    const startTime = getResponse.body[2].startTime;
+    const duration = getResponse.body[2].duration;
+    const service = getResponse.body[2].service;
 
     console.log('the title: ' + JSON.stringify(getResponse.body));
-    expect(name).toBe("Testarsson")
-    expect(date).toBe("2024-04-19")
-    expect(startTime).toBe("10")
-    expect(duration).toBe("5")
-    expect(service).toBe("Vårstädning")
-  })
-})
+    expect(name).toBe("Testarsson");
+    expect(date).toBe("2024-04-19");
+    expect(startTime).toBe("10");
+    expect(duration).toBe("5");
+    expect(service).toBe("Vårstädning");
+  });
+});

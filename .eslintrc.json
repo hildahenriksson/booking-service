@@ -15,5 +15,8 @@
         "react"
     ],
     "rules": {
+        "semi": [2, "always"],
+        "quotes": "off",
+        "no-undef": "off"
     }
 }

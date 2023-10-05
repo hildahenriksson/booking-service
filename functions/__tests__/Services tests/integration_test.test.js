@@ -2,7 +2,7 @@
  * @group integration
  */
 
-const request = require('supertest')
+const request = require('supertest');
 const express = require('express');
 const router = require('../../routes/services');
 const services = require('../../resources/services');
@@ -15,18 +15,18 @@ describe('When testing serviceHandler', () => {
     it('should respond with correct property', async () => {
       const countBefore = services.length;
       const res = await request(app)
-        .post('/services') 
+        .post('/services')
         .send({
           title: "test title",
           description: "test description",
           price: 100,
           url: "test"
         });
-    
+
       expect(res.status).toBe(302);
       expect(services.length).toBe(countBefore + 1);
     });
-  })
+  });
 });
 
 describe('GET /services', () => {
@@ -66,8 +66,8 @@ describe('PUT /service/id', () => {
       title: "Dust Testing",
       description: "Some description",
       price: "5",
-      imgURL: "image",
-    }
+      imgURL: "image"
+    };
     const idToUpdate = "4";
 
     const putResponse = await request(app)
@@ -78,14 +78,14 @@ describe('PUT /service/id', () => {
 
     const getResponse = await request(app).get('/services');
 
-    const title = getResponse.body[2].title; 
-    const description = getResponse.body[2].description; 
-    const price = getResponse.body[2].price; 
-    const imgURL = getResponse.body[2].imgURL; 
+    const title = getResponse.body[2].title;
+    const description = getResponse.body[2].description;
+    const price = getResponse.body[2].price;
+    const imgURL = getResponse.body[2].imgURL;
 
-    expect(title).toBe("Dust Testing")
-    expect(description).toBe("Some description")
-    expect(price).toBe("5")
-    expect(imgURL).toBe("image")
-  })
-})
+    expect(title).toBe("Dust Testing");
+    expect(description).toBe("Some description");
+    expect(price).toBe("5");
+    expect(imgURL).toBe("image");
+  });
+});

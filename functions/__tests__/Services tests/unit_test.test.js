@@ -4,35 +4,31 @@
 
 const express = require('express');
 const supertest = require('supertest');
-const request = require('supertest')
+// const request = require('supertest');
 const assert = require('assert');
-const serviceHandler = require('../../resources/services.json')
-const router = require('../../routes/services'); 
+// const serviceHandler = require('../../resources/services.json');
+const router = require('../../routes/services');
 
 const app = express();
 app.use(express.json());
 app.use('/', router);
 
-
 describe('When testing jest', () => {
-	describe('given i have a non failing test', () => {
-		it('should be one', () => {
-			expect(1).toBe(1)
-		})
-	})
-})
-
-describe('When fetching services', () => {
-    describe('get', () => {
-        it('should respond with array', async () => {
-            const response = await supertest(app).get('/');
-            assert(Array.isArray(response.body));
-        });
+  describe('given i have a non failing test', () => {
+    it('should be one', () => {
+      expect(1).toBe(1);
     });
+  });
 });
 
-
-
+describe('When fetching services', () => {
+  describe('get', () => {
+    it('should respond with array', async () => {
+      const response = await supertest(app).get('/');
+      assert(Array.isArray(response.body));
+    });
+  });
+});
 
 // describe('When testing serviceHandler', () => {
 //   describe('post', () => {
@@ -47,9 +43,7 @@ describe('When fetching services', () => {
 //           price: 100,
 //           imgURL: "test"
 //         });
-        
 //       expect(response.body).toHaveProperty('id', 'title', 'description', 'price', 'imgURL');
 //     }, );
-    
 //   })
 // })
