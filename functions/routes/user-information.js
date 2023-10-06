@@ -17,9 +17,11 @@ router.post('/login', (req, res) => {
     const accessToken = jwt.sign({ id: user.id }, process.env.ACCESS_TOKEN_SECRET, {
       expiresIn: '1h'
     });
-    res.json({
+    res.status(200).json({
       accessToken: accessToken,
-      admin: user.admin
+      admin: user.admin,
+      status: 200,
+      message: 'Ok'
     });
   } else {
     res.status(401).json({ message: 'Authentication failed' });
@@ -40,6 +42,11 @@ router.post('/register', (req, res) => {
   userinformation.push(newUser);
   console.log(userinformation);
   res.redirect('/');
+
+  res.status(200).send({
+    message: 'User registered successfully',
+    status: 200
+  });
 });
 
 router.delete('/:id', (req, res) => {
@@ -48,13 +55,10 @@ router.delete('/:id', (req, res) => {
 
   if (userIndex !== -1) {
     userinformation.splice(userIndex, 1);
-    res.status(200).json({ message: 'User deleted' });
-  } else {
-    res.status(404).json({ message: 'User not found' });
-  }
-  if (userIndex !== -1) {
-    userinformation.splice(userIndex, 1);
-    res.status(200).json({ message: 'User deleted' });
+    res.status(200).json({
+      message: 'User deleted',
+      status: 200
+    });
   } else {
     res.status(404).json({ message: 'User not found' });
   }
