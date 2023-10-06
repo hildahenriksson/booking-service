@@ -19,3 +19,13 @@ describe('When fetching bookings', () => {
     });
   });
 });
+
+// describe('When testing userHandler', () => {
+//   describe('create', () => {
+//     it('should add one', async () => {
+//       let countBefore = userHandler.readAll().length;
+//       userHandler.create({"name":"name", "password":"pw"});
+//       expect(userHandler.readAll().length).toBe(countBefore + 1);
+//     });
+//   });
+// });

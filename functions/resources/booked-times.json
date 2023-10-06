@@ -4,97 +4,97 @@
         "name": "John Doe",
         "date": "2023-10-29",
         "startTime": 9,
-        "service": "Flyttstäd"
+        "service": "Final cleaning"
     }, 
     {
         "id": "2",
         "name": "John Doe",
         "date": "2023-10-29",
         "startTime": 10,
-        "service": "Flyttstäd"
+        "service": "Final cleaning"
     },
     {
         "id": "3",
         "name": "John Doe",
         "date": "2023-10-29",
         "startTime": 11,
-        "service": "Flyttstäd"
+        "service": "Final cleaning"
     }, 
     {
         "id": "4",
         "name": "John Doe",
         "date": "2023-10-29",
         "startTime": 12,
-        "service": "Flyttstäd"
+        "service": "Final cleaning"
     },  
     {
         "id": "5",
         "name": "Jane Doe",
         "date": "2023-10-30",
         "startTime": 9,
-        "service": "Fönsterputs"
+        "service": "Window cleaning"
     },
     {
         "id": "6",
         "name": "Jane Doe",
         "date": "2023-10-30",
         "startTime": 10,
-        "service": "Fönsterputs"
+        "service": "Window cleaning"
     },
     {
         "id": "7",
         "name": "Jamal Doe",
         "date": "2023-10-23",
         "startTime": 13,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     },
     {
         "id": "8",
         "name": "Jamal Doe",
         "date": "2023-10-23",
         "startTime": 14,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     },
     {
         "id": "9",
         "name": "Jamal Doe",
         "date": "2023-10-23",
         "startTime": 15,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     },
     {
         "id": "10",
         "name": "Jasmine Doe",
         "date": "2023-10-29",
         "startTime": 13,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     },
     {
         "id": "11",
         "name": "Jasmine Doe",
         "date": "2023-10-29",
         "startTime": 14,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     },
     {
         "id": "12",
         "name": "Jasmine Doe",
         "date": "2023-10-29",
         "startTime": 15,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     },
     {
         "id": "13",
         "name": "Jasmine Doe",
         "date": "2023-10-29",
         "startTime": 16,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     },
     {
         "id": "14",
         "name": "Jasmine Doe",
         "date": "2023-10-29",
         "startTime": 17,
-        "service": "Vardagsstädning"
+        "service": "Everyday cleaning"
     }
 ]
