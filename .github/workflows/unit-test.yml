@@ -21,4 +21,4 @@ jobs:
       run: npm run test unit_test
     
     - name: Run Component Tests
-      run: npm run component_test
+      run: npm run test component_test
