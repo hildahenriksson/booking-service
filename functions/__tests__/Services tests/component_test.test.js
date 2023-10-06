@@ -1,5 +1,5 @@
 /**
- * @group integration
+ * @group component
  */
 
 const request = require('supertest');
