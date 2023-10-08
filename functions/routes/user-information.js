@@ -29,6 +29,15 @@ router.post('/login', (req, res) => {
 });
 
 router.post('/register', (req, res) => {
+  const userExists = userinformation.some(user => user.username === req.body.username);
+
+  if (userExists) {
+    return res.status(400).send({
+      message: 'Username already taken',
+      status: 400
+    });
+  }
+
   const newUser = {
     id: uuid.v4(),
     username: req.body.username,
@@ -38,10 +47,6 @@ router.post('/register', (req, res) => {
 
   userinformation.push(newUser);
   console.log(userinformation);
-  res.redirect('/');
-  userinformation.push(newUser);
-  console.log(userinformation);
-  res.redirect('/');
 
   res.status(200).send({
     message: 'User registered successfully',
