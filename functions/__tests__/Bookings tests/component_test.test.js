@@ -44,7 +44,7 @@ describe('DELETE /booking/:id', () => {
     const response = await request(app)
       .delete(`/booking/${idToDelete}`);
 
-    expect(response.statusCode).toBe(200);
+    expect(response.statusCode).toBe(204);
     expect(bookedTimes.some(booking => booking.id === idToDelete)).toBe(false);
   });
 
