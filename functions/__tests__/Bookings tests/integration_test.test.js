@@ -3,8 +3,7 @@
  */
 
 const request = require('supertest');
-const PORT = 3000;
-const HOST = `https://api-s5hih6nmta-uc.a.run.app/` || `http://localhost:${PORT}`;
+const HOST = 'https://api-s5hih6nmta-uc.a.run.app/';
 const container = request(HOST);
 
 describe('When testing /', () => {
@@ -32,6 +31,15 @@ describe('When testing /booking', () => {
         .post('/booking')
         .send({ name: "name", service: "Everyday cleaning" });
       expect(res.statusCode).toEqual(302);
+    });
+  });
+
+  describe('Post', () => {
+    it('should return status 404', async () => {
+      const res = await container
+        .post('/booking/hej')
+        .send({ name: "name", service: "Everyday cleaning" });
+      expect(res.statusCode).toEqual(404);
     });
   });
 });

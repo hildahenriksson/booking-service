@@ -23,6 +23,9 @@ jobs:
     - name: Run Component Tests
       run: npm run test component_test
 
+    - name: Run Integration Tests
+      run: npm run test integration_test
+
   deploy:
     name: Deploy
     needs: test
