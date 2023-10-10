@@ -1,9 +1,5 @@
 name: Firebase CI
-
-on:
-  push:
-    branches: main
-
+on: push
 jobs:
   build:
 
@@ -22,7 +18,7 @@ jobs:
     
     - run: npm i
     - run: npm install -g firebase-tools
-    - run: npm run test
+    - run: npm run test unit_test
     - run: npm run build
     - name: Archive Build
       uses: actions/upload-artifact@v2
