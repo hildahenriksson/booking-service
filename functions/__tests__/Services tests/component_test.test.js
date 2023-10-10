@@ -46,7 +46,7 @@ describe('DELETE /service/:id', () => {
     const response = await request(app)
       .delete(`/services/${idToDelete}`);
 
-    expect(response.statusCode).toBe(200);
+    expect(response.statusCode).toBe(204);
     expect(services.some(service => service.id === idToDelete)).toBe(false);
   });
 

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const uuid = require('uuid');
+const crypto = require('crypto');
 const userinformation = require('../resources/user-information.json');
 require('dotenv').config();
 
@@ -39,7 +39,7 @@ router.post('/register', (req, res) => {
   }
 
   const newUser = {
-    id: uuid.v4(),
+    id: crypto.randomUUID(),
     username: req.body.username,
     password: req.body.password,
     admin: false
