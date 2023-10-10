@@ -28,7 +28,12 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
       - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
