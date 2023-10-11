@@ -8,6 +8,7 @@ exports.create_booking = (req, res) => {
       name: req.body.name,
       date: req.body.date,
       startTime: req.body.startTime,
+      duration: req.body.duration,
       service: req.body.service
     };
     bookedTimes.push(newBooking);
