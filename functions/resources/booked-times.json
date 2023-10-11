@@ -1,146 +1,153 @@
 [
     {
+        "id": "1",
+        "name": "John Doe",
+        "date": "2023-10-29",
+        "startTime": 9,
+        "service": "Final cleaning"
+    },
+    {
         "id": "09f6fdf6-ddd2-4a38-82b9-45e1ccd738ce",
         "name": "Francis Flemings",
         "date": "2023-10-17",
         "startTime": 11,
         "duration": 2,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "5885295a-cb07-483a-a55c-1975a295ec9f",
         "name": "Lenna Brandauer",
         "date": "2023-10-17",
         "startTime": 16,
         "duration": 2,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "e4ff2d00-8b94-429c-84fb-28f5b205f52e",
         "name": "Wanda Frodsham",
         "date": "2023-10-19",
         "startTime": 9,
         "duration": 4,
         "service": "Everyday cleaning"
-      },
-      {
+    },
+    {
         "id": "1f89f9f5-42e9-450b-a674-a2c0d5e5a9e7",
         "name": "Edelmira Tvedt",
         "date": "2023-10-22",
         "startTime": 17,
         "duration": 1,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "f3d557a1-2c72-4278-8e9b-d4dd51bde3c4",
         "name": "Sadye Tinger",
         "date": "2023-10-17",
         "startTime": 13,
         "duration": 2,
         "service": "Final cleaning"
-      },
-      {
+    },
+    {
         "id": "488577d8-4ae7-4e3e-b1d2-4d906bde24be",
         "name": "Avery Aalbers",
         "date": "2023-10-16",
         "startTime": 12,
         "duration": 3,
         "service": "Window cleaning"
-      },
-      {
+    },
+    {
         "id": "9305f01e-cd3b-41fc-a1fa-f3a06acf0462",
         "name": "Nathaniel Mcgavisk",
         "date": "2023-10-17",
         "startTime": 9,
         "duration": 2,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "a81754c9-da6b-4698-bd57-81587089d4ba",
         "name": "Stephaine Rafiq",
         "date": "2023-10-19",
         "startTime": 14,
         "duration": 4,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "eaaee97a-8511-4a8c-b929-17a7bae2411b",
         "name": "Augusta Quezad",
         "date": "2023-10-16",
         "startTime": 9,
         "duration": 3,
         "service": "Window cleaning"
-      },
-      {
+    },
+    {
         "id": "956f6e64-e4c6-488d-a2aa-1d53309e791d",
         "name": "Emilie Wittrock",
         "date": "2023-10-18",
         "startTime": 16,
         "duration": 2,
         "service": "Everyday cleaning"
-      },
-      {
+    },
+    {
         "id": "85e75f97-584d-454b-aed9-75241bae71e4",
         "name": "Kam Pi",
         "date": "2023-10-21",
         "startTime": 9,
         "duration": 1,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "939ba811-fa18-44ad-83c0-c8cb16a44405",
         "name": "Shayla Lebourgeois",
         "date": "2023-10-20",
         "startTime": 13,
         "duration": 3,
         "service": "Final cleaning"
-      },
-      {
+    },
+    {
         "id": "517e068e-8c07-449a-b24e-27e187bfba2f",
         "name": "Justa Zalwsky",
         "date": "2023-10-18",
         "startTime": 10,
         "duration": 5,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "f565841b-a5ac-4f9e-a65a-343aa92de904",
         "name": "Juli Mass",
         "date": "2023-10-22",
         "startTime": 11,
         "duration": 3,
         "service": "Window cleaning"
-      },
-      {
+    },
+    {
         "id": "eee5eebb-98e8-43c9-8914-1a95a9402098",
         "name": "Cassey Lanthier",
         "date": "2023-10-16",
         "startTime": 15,
         "duration": 3,
         "service": "Everyday cleaning"
-      },
-      {
+    },
+    {
         "id": "29c7482d-282b-4b05-896b-3a57a9aa6454",
         "name": "Cristin Simonin",
         "date": "2023-10-20",
         "startTime": 9,
         "duration": 2,
         "service": "Dust busting"
-      },
-      {
+    },
+    {
         "id": "32d2b815-53dc-41a6-9543-60ed5aa8eabe",
         "name": "Daniele Ismay",
         "date": "2023-10-20",
         "startTime": 16,
         "duration": 2,
         "service": "Everyday cleaning"
-      },
-      {
+    },
+    {
         "id": "0f76098e-ab46-4e1e-8968-ab14f572354d",
         "name": "Kristofer Jamaica",
         "date": "2023-10-21",
         "startTime": 9,
         "duration": 2,
         "service": "Dust busting"
-      }
+    }
 ]
