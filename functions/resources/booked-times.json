@@ -1,233 +1,146 @@
 [
     {
-        "id": "1",
-        "name": "John Doe",
-        "date": "2023-10-29",
-        "startTime": 9,
-        "service": "Final cleaning"
-    }, 
-    {
-        "id": "2",
-        "name": "John Doe",
-        "date": "2023-10-29",
-        "startTime": 10,
-        "service": "Final cleaning"
-    },
-    {
-        "id": "3",
-        "name": "John Doe",
-        "date": "2023-10-29",
+        "id": "09f6fdf6-ddd2-4a38-82b9-45e1ccd738ce",
+        "name": "Francis Flemings",
+        "date": "2023-10-17",
         "startTime": 11,
-        "service": "Final cleaning"
-    }, 
-    {
-        "id": "4",
-        "name": "John Doe",
-        "date": "2023-10-29",
-        "startTime": 12,
-        "service": "Final cleaning"
-    },  
-    {
-        "id": "5",
-        "name": "Jane Doe",
-        "date": "2023-10-30",
-        "startTime": 9,
-        "service": "Window cleaning"
-    },
-    {
-        "id": "6",
-        "name": "Jane Doe",
-        "date": "2023-10-30",
-        "startTime": 10,
-        "service": "Window cleaning"
-    },
-    {
-        "id": "7",
-        "name": "Jamal Doe",
-        "date": "2023-10-23",
-        "startTime": 13,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "8",
-        "name": "Jamal Doe",
-        "date": "2023-10-23",
-        "startTime": 14,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "9",
-        "name": "Jamal Doe",
-        "date": "2023-10-23",
-        "startTime": 15,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "10",
-        "name": "Jasmine Doe",
-        "date": "2023-10-29",
-        "startTime": 13,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "11",
-        "name": "Jasmine Doe",
-        "date": "2023-10-29",
-        "startTime": 14,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "12",
-        "name": "Jasmine Doe",
-        "date": "2023-10-29",
-        "startTime": 15,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "13",
-        "name": "Jasmine Doe",
-        "date": "2023-10-29",
+        "duration": 2,
+        "service": "Dust busting"
+      },
+      {
+        "id": "5885295a-cb07-483a-a55c-1975a295ec9f",
+        "name": "Lenna Brandauer",
+        "date": "2023-10-17",
         "startTime": 16,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "14",
-        "name": "Jasmine Doe",
-        "date": "2023-10-29",
-        "startTime": 17,
-        "service": "Everyday cleaning"
-    },
-    {
-        "id": "6d4ee1c8-1c62-4824-b9bd-6606f280e682",
-        "name": "Lori Drahota",
-        "date": "2023-10-17",
-        "startTime": 14,
+        "duration": 2,
         "service": "Dust busting"
       },
       {
-        "id": "e93e3538-1596-4d9a-9ff9-86515bcf6149",
-        "name": "Rocky Onnen",
+        "id": "e4ff2d00-8b94-429c-84fb-28f5b205f52e",
+        "name": "Wanda Frodsham",
         "date": "2023-10-19",
-        "startTime": 10,
-        "service": "Window cleaning"
-      },
-      {
-        "id": "ee0f0238-72a8-4eb5-bba8-5d781dcb11e9",
-        "name": "Tayna Laurole",
-        "date": "2023-10-16",
-        "startTime": 12,
-        "service": "Window cleaning"
-      },
-      {
-        "id": "6abbef9e-fdea-40df-bb30-f938787abaa9",
-        "name": "Caroll Broaden",
-        "date": "2023-10-19",
-        "startTime": 11,
-        "service": "Dust busting"
-      },
-      {
-        "id": "4e202bf0-87e1-4772-af63-0f5c3b9a8f2d",
-        "name": "Tracey Schippers",
-        "date": "2023-10-17",
-        "startTime": 10,
-        "service": "Everyday cleaning"
-      },
-      {
-        "id": "7b8f65e7-bba6-4495-83dc-73d8080b55b4",
-        "name": "Marin Graver",
-        "date": "2023-10-21",
-        "startTime": 10,
-        "service": "Dust busting"
-      },
-      {
-        "id": "4307e6e3-d09f-4a60-a020-0f0a86e0ceef",
-        "name": "Cathern Dedios",
-        "date": "2023-10-18",
-        "startTime": 15,
-        "service": "Everyday cleaning"
-      },
-      {
-        "id": "8db2d71a-7197-4c92-85da-84040c546c4a",
-        "name": "Genevie Schreader",
-        "date": "2023-10-16",
-        "startTime": 13,
-        "service": "Window cleaning"
-      },
-      {
-        "id": "f8cdb094-39d2-470a-b34c-732791116feb",
-        "name": "Rosanne Nusbaum",
-        "date": "2023-10-21",
-        "startTime": 13,
-        "service": "Everyday cleaning"
-      },
-      {
-        "id": "a64127b7-2623-4f2c-8f58-e030840d4277",
-        "name": "Arielle Fladger",
-        "date": "2023-10-20",
-        "startTime": 13,
-        "service": "Everyday cleaning"
-      },
-      {
-        "id": "20d533d0-70b0-43e0-8e98-768476f3fce3",
-        "name": "Ta Kretzinger",
-        "date": "2023-10-17",
         "startTime": 9,
+        "duration": 4,
+        "service": "Everyday cleaning"
+      },
+      {
+        "id": "1f89f9f5-42e9-450b-a674-a2c0d5e5a9e7",
+        "name": "Edelmira Tvedt",
+        "date": "2023-10-22",
+        "startTime": 17,
+        "duration": 1,
+        "service": "Dust busting"
+      },
+      {
+        "id": "f3d557a1-2c72-4278-8e9b-d4dd51bde3c4",
+        "name": "Sadye Tinger",
+        "date": "2023-10-17",
+        "startTime": 13,
+        "duration": 2,
         "service": "Final cleaning"
       },
       {
-        "id": "9d8a3f6b-416c-48b4-97ba-dae50a682a1c",
-        "name": "Lionel Kidder",
-        "date": "2023-10-20",
-        "startTime": 11,
-        "service": "Everyday cleaning"
+        "id": "488577d8-4ae7-4e3e-b1d2-4d906bde24be",
+        "name": "Avery Aalbers",
+        "date": "2023-10-16",
+        "startTime": 12,
+        "duration": 3,
+        "service": "Window cleaning"
       },
       {
-        "id": "72c58dda-b6b3-45a0-bfc6-96314312276b",
-        "name": "Waneta Demorrett",
-        "date": "2023-10-16",
-        "startTime": 11,
+        "id": "9305f01e-cd3b-41fc-a1fa-f3a06acf0462",
+        "name": "Nathaniel Mcgavisk",
+        "date": "2023-10-17",
+        "startTime": 9,
+        "duration": 2,
         "service": "Dust busting"
       },
       {
-        "id": "2cc752c0-06f0-4bf8-a07d-357883629109",
-        "name": "Pasquale Zagulski",
-        "date": "2023-10-18",
+        "id": "a81754c9-da6b-4698-bd57-81587089d4ba",
+        "name": "Stephaine Rafiq",
+        "date": "2023-10-19",
         "startTime": 14,
+        "duration": 4,
+        "service": "Dust busting"
+      },
+      {
+        "id": "eaaee97a-8511-4a8c-b929-17a7bae2411b",
+        "name": "Augusta Quezad",
+        "date": "2023-10-16",
+        "startTime": 9,
+        "duration": 3,
         "service": "Window cleaning"
       },
       {
-        "id": "0652b4ac-7afd-4bce-9613-f67f2f350086",
-        "name": "Angelika Dechellis",
-        "date": "2023-10-22",
-        "startTime": 12,
+        "id": "956f6e64-e4c6-488d-a2aa-1d53309e791d",
+        "name": "Emilie Wittrock",
+        "date": "2023-10-18",
+        "startTime": 16,
+        "duration": 2,
         "service": "Everyday cleaning"
       },
       {
-        "id": "54e7c395-6066-4dbb-843a-93b84994e9a6",
-        "name": "Verlene Dunlavy",
-        "date": "2023-10-17",
+        "id": "85e75f97-584d-454b-aed9-75241bae71e4",
+        "name": "Kam Pi",
+        "date": "2023-10-21",
+        "startTime": 9,
+        "duration": 1,
+        "service": "Dust busting"
+      },
+      {
+        "id": "939ba811-fa18-44ad-83c0-c8cb16a44405",
+        "name": "Shayla Lebourgeois",
+        "date": "2023-10-20",
         "startTime": 13,
-        "service": "Everyday cleaning"
+        "duration": 3,
+        "service": "Final cleaning"
       },
       {
-        "id": "38986bb1-b6b4-4a63-b8a1-b5189ead77a6",
-        "name": "Lesha Asleson",
+        "id": "517e068e-8c07-449a-b24e-27e187bfba2f",
+        "name": "Justa Zalwsky",
         "date": "2023-10-18",
         "startTime": 10,
+        "duration": 5,
+        "service": "Dust busting"
+      },
+      {
+        "id": "f565841b-a5ac-4f9e-a65a-343aa92de904",
+        "name": "Juli Mass",
+        "date": "2023-10-22",
+        "startTime": 11,
+        "duration": 3,
+        "service": "Window cleaning"
+      },
+      {
+        "id": "eee5eebb-98e8-43c9-8914-1a95a9402098",
+        "name": "Cassey Lanthier",
+        "date": "2023-10-16",
+        "startTime": 15,
+        "duration": 3,
         "service": "Everyday cleaning"
       },
       {
-        "id": "9b5c404f-3615-4875-8775-7c819b14fd60",
-        "name": "Lilly Keough",
-        "date": "2023-10-18",
+        "id": "29c7482d-282b-4b05-896b-3a57a9aa6454",
+        "name": "Cristin Simonin",
+        "date": "2023-10-20",
         "startTime": 9,
-        "service": "Window cleaning"
+        "duration": 2,
+        "service": "Dust busting"
       },
       {
-        "id": "528c9bab-872a-4467-9274-e188165f3c9f",
-        "name": "Tonisha Troesch",
-        "date": "2023-10-18",
-        "startTime": 13,
-        "service": "Window cleaning"
+        "id": "32d2b815-53dc-41a6-9543-60ed5aa8eabe",
+        "name": "Daniele Ismay",
+        "date": "2023-10-20",
+        "startTime": 16,
+        "duration": 2,
+        "service": "Everyday cleaning"
+      },
+      {
+        "id": "0f76098e-ab46-4e1e-8968-ab14f572354d",
+        "name": "Kristofer Jamaica",
+        "date": "2023-10-21",
+        "startTime": 9,
+        "duration": 2,
+        "service": "Dust busting"
       }
 ]
