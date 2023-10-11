@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-// const uuid = require('uuid')
 const crypto = require('crypto');
 const customerReviews = require('../resources/customer-reviews.json');
 
