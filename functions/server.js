@@ -8,7 +8,7 @@ app.use(
   })
 );
 app.get('/', (req, res) => {
-  res.json({ status: "Updated" });
+  res.json({ status: "OK" });
 });
 
 const bookingRouter = require('./routes/bookings');
